@@ -1,9 +1,13 @@
 # books
 
 ## Project setup
+
+```
+npm install -g @vue/cli
+# OR
+yarn global add @vue/cli
 ```
 yarn install
-```
 
 ### Compiles and hot-reloads for development
 ```
