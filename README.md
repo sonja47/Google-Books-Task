@@ -7,7 +7,7 @@ npm install -g @vue/cli
 # OR
 yarn global add @vue/cli
 ```
-yarn install
+then run yarn install in project root
 
 ### Compiles and hot-reloads for development
 ```
