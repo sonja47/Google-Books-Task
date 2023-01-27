@@ -1,0 +1,172 @@
+@import '_variables.scss';
+
+.container {
+  margin: 250px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  height: 100%;
+}
+
+.wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  height: 100%;
+}
+
+.books-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.books-img {
+  width: 40px;
+}
+
+.books-title {
+  font-size: 30px;
+}
+
+.input-holder {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.search-input {
+  width: 500px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid black;
+  padding: 2px 10px;
+  font-size: 16px;
+  background-color: $input-background;
+  color: $body-text-color;
+}
+
+.search-input.empty-search {
+  width: 80%;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid black;
+  margin: auto;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  background-color: $input-background;
+  color: $body-text-color;
+}
+
+.sort-buttons {
+  width: 300px;
+  height: 50px;
+}
+
+.sort-container {
+  height: 100%;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort-btn {
+  height: 100%;
+  background-color: $input-background;
+  padding: 10px;
+  border-radius: 8px;
+  color: $body-text-color;
+
+  &:hover {
+    background-color: $btn-background-hover;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+}
+
+.relevance, .newest {
+  background-color: $btn-background-selected;
+}
+
+.books-holder {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: calc(90vh - 120px);
+  position: absolute;
+  top: 130px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 30px;
+  width: 90%;
+  align-self: center;
+}
+
+.books-wrapper {
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  background-color: $input-background;
+  overflow: hidden;
+  min-height: 200px;
+
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.see-more-books {
+  background-color: transparent;
+  border: 2px solid $btn-border-hover;
+  border-radius: 8px;
+  margin: auto;
+  padding: 20px;
+  font-size: 18px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $btn-background-hover;
+    border: 2px solid $btn-border-hover;
+    border-radius: 8px;
+  }
+}
+
+.loader {
+  padding: 20px;
+  background-color: $input-background;
+  color: $body-text-color;
+  font-size: 28px;
+}
+
+.books-wrapper[data-rating='1'],
+.books-wrapper[data-rating='1.5'] {
+  grid-row: auto / span 1;
+}
+
+.books-wrapper[data-rating='2'],
+.books-wrapper[data-rating='2.5'],
+.books-wrapper[data-rating='3'],
+.books-wrapper[data-rating='3.5'] {
+  grid-row: auto / span 2;
+}
+
+
+.books-wrapper[data-rating='4'],
+.books-wrapper[data-rating='4.5'],
+.books-wrapper[data-rating='5'] {
+  grid-row: auto /span 2;
+  grid-column: auto / span 2;
+}
+
+
+

@@ -1,0 +1,91 @@
+@import "_variables.scss";
+
+.modal-wrapper {
+  width: auto;
+  height: auto;
+  max-height: 90vh;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  overflow: auto;
+}
+
+.header-holder {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-title {
+  margin: auto;
+  text-align: center;
+  color: $input-background;
+}
+
+.book-subtitle {
+  font-weight: 500;
+  font-size: 15px;
+  color: $description-text;
+}
+
+.close-modal {
+  cursor: pointer;
+  height: 15px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.thumbnail-image {
+  height: 300px;
+  margin: 25px auto;
+  display: flex;
+}
+
+.no-image {
+  background-color: #a6a6a6;
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.book-description {
+  font-style: italic;
+  font-size: 14px;
+  color: $description-text;
+}
+
+.book-rating {
+  font-size: 15px;
+  margin: 5px 0;
+  color: $input-background;
+}
+
+.book-publisher {
+  font-weight: 600;
+  font-size: 13px;
+  margin: 5px 0;
+  color: $input-background;
+}
+
+.book-source {
+  font-size: 15px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #000000da;
+
+}

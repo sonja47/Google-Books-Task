@@ -1,0 +1,46 @@
+.book-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.book-img-container {
+  height: 200px;
+}
+
+.book-info, .book-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.star-rating-icon {
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+}
+
+.star-rating-icon.half-star {
+  width: 7px;
+  height: 15px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.book-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 10, 0.9);
+  padding: 10px;
+}
+
+.book-name {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.book-title {
+  text-align: center;
+}
